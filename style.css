@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 .header{
     background: radial-gradient(#fff, #ffd6d6);
@@ -11,28 +15,23 @@
     align-items: center;
     padding: 20px;
 }
-
 nav{
     flex: 1;
     text-align: right;
 }
-
 nav ul{
     display: inline-block;
     list-style: none;
 }
-
 nav ul li{
     display: inline-block;
     margin-right: 20px;
     
 }
-
 a{
     text-decoration: none;
     color: #555;
 }
-
 p{ color :#555}
 .container{
     max-width: 1300px;
@@ -40,7 +39,6 @@ p{ color :#555}
     padding-left: 25px;
     padding-right: 25px;
 }
-
 .row{
     display: flex;
     align-items: center;
@@ -67,4 +65,11 @@ p{ color :#555}
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #536434;
+}
+.header .row{
+    margin-top: 70px;
 }
