@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 .header{
     background: radial-gradient(#fff, #ffd6d6);
@@ -189,3 +191,51 @@ small{ color :#555}
     filter: grayscale(100%);   
 }
 .col-5 img:hover{ filter: grayscale(0);}
+
+.footer{
+    background-color:#000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding-top: 0;
+
+}
+/* .footer p{ color: #8a8a8a;} */
+.footer h3{color: #fff; margin-top: 20px;}
+/* .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+} */
+.footer-col-4 {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    transform: 0.5s;    
+}
+.footer-col-4 li{
+    display: inline;
+    justify-content: space-between;
+    transform: 0.5s
+ }
+.footer-col-4 li:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.footer-col-4 li a i{color:#b5b5b5;}
+/* .footer-col-1{ flex-basis: 30%;}
+.footer-col-2{flex: 1; text-align: center;}
+.footer-col-2 img{width: 180px;margin-bottom: 20px;}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+} */
+ul{list-style: none;}
+/* .app-logo img{width: 140px;} */
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 5px 0;
+}
+.copyright{ text-align: center;color:#b5b5b5;}
