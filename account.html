@@ -38,8 +38,8 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span>Login</span>
-                            <span>Register</span>
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
                         <form id="LoginForm">
@@ -112,6 +112,23 @@
             menuToggle.style.maxHeight = "200px";
         else
             menuToggle.style.maxHeight = "0px";
+    }
+</script>
+
+   <!-- js for Toggle Menu -->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
     }
 </script>
 

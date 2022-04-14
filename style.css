@@ -396,6 +396,7 @@ td img{
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden;
 }
 .form-container span{
     font-weight: bold;
@@ -411,6 +412,7 @@ td img{
     padding: 0 20px;
     position: absolute;
     top: 130px;
+    transition: 1s;
 }
 form input{
     width: 100%;
@@ -439,6 +441,7 @@ form a{font-size: 12px;}
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
+    transition: 1s;
 }
 /* ----------------------- media query for less than 600 screen size ------------------------- */
 
