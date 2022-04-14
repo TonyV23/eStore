@@ -32,7 +32,21 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/gallery-1.jpg" alt="">
+                <img src="images/gallery-1.jpg" alt="" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                </div>
             </div>
             <div class="col-2">
                 <p>Home / T-Shirt</p>
@@ -169,5 +183,24 @@
             menuToggle.style.maxHeight = "0px";
     }
 </script>
+
+    <!-- --------------------- js for product gallery ----------------------------- -->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+    </script>
 
 </html>
